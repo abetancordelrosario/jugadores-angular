@@ -4,6 +4,9 @@ Este es un proyecto para la asignatura de Desarrollo de Aplicaciones Web II de l
 
 En este caso, se ha realizado una aplicación para la gestión de la plantilla de la Unión Deportiva Las Palmas en el que se indican datos del jugador como el nombre, apellidos, edad y posición(delantero, centrocampista, defensa o portero). Además, recalcar el uso de las librerías Boostrap y angular-material en la mejora de la estética del sitio web.
 
+Usuario: admin@gmail.com
+Contraseña: admindaw2
+
 Dependencias:
 
 *    Angular 13.2.6
