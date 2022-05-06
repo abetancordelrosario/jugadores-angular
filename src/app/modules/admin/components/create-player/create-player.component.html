@@ -1,0 +1,49 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Crear Usuario</span>
+        <div class="spacer"></div>
+    </mat-toolbar>
+    <mat-card style="margin-top: 10px;">
+        <form [formGroup]="form" (ngSubmit)="agregarUsuario()">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput autocomplete="off" formControlName="name">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5" >
+                    <img src="./assets/img/udlp.png">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field>
+                        <mat-label>Surname</mat-label>
+                        <input matInput autocomplete="off" formControlName="surname">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field>
+                        <mat-label>Age</mat-label>
+                        <input matInput autocomplete="off" formControlName="age">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field appearance="fill">
+                        <mat-form-field>
+                            <mat-label>Position</mat-label>
+                            <mat-select formControlName="position">
+                              <mat-option *ngFor="let item of position" [value]="item">
+                                {{item}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <button mat-raised-button style="margin-right: 30px;" routerLink="/admin/home">Volver</button>
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary" >Aceptar</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+</div>

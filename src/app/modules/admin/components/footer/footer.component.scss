@@ -1,3 +1,9 @@
+footer{
+  position:fixed !important;
+  bottom:0px !important;
+  width:100%;
+  }
+  
 .footer-widget p {
     margin-bottom: 27px;
 }
@@ -79,7 +85,6 @@ p {
     width: 80%; } } 
 
 .dk-footer {
-  padding: 75px 0 0;
   background-color: #151414;
   position: relative;
   z-index: 2; }
@@ -311,3 +316,4 @@ p {
 .stick-footer {
   margin-top: auto;
 }
+

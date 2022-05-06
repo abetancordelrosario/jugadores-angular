@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CreatePlayerComponent } from './components/create-player/create-player.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,9 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'services', component: ServicesComponent },
-      { path: 'contact', component: ContactComponent },
+      { path: 'contact', component: ContactComponent },      
+      { path: 'create-player', component: CreatePlayerComponent },
+      { path: 'home/create-player/:id', component: CreatePlayerComponent },
       { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
     ],
   },
